@@ -107,8 +107,8 @@ nav a:hover{
     display: grid;
     grid: "contact1 contact2 contact3"
           "contact4 contact5 contact6"  ;
-    grid-template-columns: 1fr 1fr 6fr ;
-    grid-template-rows: 2fr 2fr 2fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  ;
     
     gap:10px;
 }
