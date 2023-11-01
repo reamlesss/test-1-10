@@ -74,6 +74,7 @@ nav a:hover{
     margin-top: 20vh;
     flex-wrap: wrap;
     
+    
 }
 #item{
     display: flex;
@@ -81,7 +82,9 @@ nav a:hover{
     border: 1px solid white;
     background-color: rgb(28, 28, 28);
     transition: .2s all;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
+   min-height: 220px;
+   min-width: 220px;
     
 }
 #item img{
@@ -96,4 +99,55 @@ nav a:hover{
 
 #item:hover{
     transform: scale(110%);
+}
+
+
+
+#contacts{
+    display: grid;
+    grid: "contact1 contact2 contact3"
+          "contact4 contact5 contact6"  ;
+    grid-template-columns: 1fr 1fr 6fr ;
+    grid-template-rows: 2fr 2fr 2fr ;
+    
+    gap:10px;
+}
+
+#contacts div{
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    max-width: 200px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+
+#contacts div img{
+    max-width: 5vw;
+    border-radius: 40px;
+}
+#contact-name{
+    color: rgb(246, 246, 246);
+}
+#mob-number{
+    color: white;
+    font-style: italic;  
+}
+
+#contact1{
+    grid-area: contact1;
+}
+#contact2{
+    grid-area: contact2;
+}
+#contact3{
+    grid-area: contact3;
+}
+#contact4{
+    grid-area: contact4;
+}
+#contact5{
+    grid-area: contact5;
+}
+#contact6{
+    grid-area: contact6;
 }
