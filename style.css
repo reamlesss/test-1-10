@@ -3,6 +3,10 @@ body{
     background-color: rgb(19, 19, 19);
 }
 
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -58,4 +62,38 @@ nav a:hover{
     color: white;
     max-width: 20vw;
     min-width: 0vw;
+}
+
+#items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap:break-word;
+    gap: 10vw;
+    margin-top: 20vh;
+    flex-wrap: wrap;
+    
+}
+#item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: rgb(28, 28, 28);
+    transition: .2s all;
+    flex-wrap: wrap;
+    
+}
+#item img{
+    max-width: 15vw;
+}
+#item p{
+    color: white;
+    max-width: 15vw;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#item:hover{
+    transform: scale(110%);
 }
